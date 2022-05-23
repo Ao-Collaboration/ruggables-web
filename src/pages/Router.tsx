@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { HomeRoute, MintRoute } from './routes'
 import { Web3Context } from '../context/Web3/Web3Context'
 import ConnectWallet from './ConnectWallet/ConnectWallet'
-import Header from '../components/Header/Header'
 import Home from './Home/Home'
 import Mint from './Mint/Mint'
 
@@ -16,7 +15,6 @@ function Router() {
 	}
 	return (
 		<>
-			<Header />
 			<BrowserRouter>
 				<Routes>
 					<Route path={HomeRoute.path} element={<Home />} />

@@ -5,6 +5,7 @@ import { Web3Context } from '../../context/Web3/Web3Context'
 import useStyles from './Mint.styles'
 import { getChainConfig } from '../../config/chain'
 import RuggableABI from '../../abis/RuggableFreeMint.json'
+import PageWrapper from '../../components/PageWrapper/PageWrapper'
 
 const Mint = () => {
 	const { web3Provider } = useContext(Web3Context)
@@ -26,13 +27,15 @@ const Mint = () => {
 	}
 
 	return (
-		<div className={classes.page}>
-			<h1>Mint your Ruggable!</h1>
-			<Button onClick={doMint} disabled={txPending}>
-				{txPending ? 'Tx Pending...' : 'Mint' }
-			</Button>
-			<p>{message}</p>
-		</div>
+		<PageWrapper>
+			<div className={classes.page}>
+				<h1>Mint your Ruggable!</h1>
+				<Button onClick={doMint} disabled={txPending}>
+					{txPending ? 'Tx Pending...' : 'Mint' }
+				</Button>
+				<p>{message}</p>
+			</div>
+		</PageWrapper>
 	)
 }
 
