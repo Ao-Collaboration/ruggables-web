@@ -10,8 +10,8 @@ export const getChainConfig = async (provider: providers.Web3Provider): Promise<
 	if (network.chainId === 4) {
 		// Rinkeby
 		return {
-			ruggableAddress: '0xEF9aD9FB57269E9Fe27FFAC83ba6f42C100E0aeC',
-			pullAddress: '0xfa8662c4d12c6c7BA2a945E548FdC56D37d36f92',
+			ruggableAddress: '0x0C216E711Fd65c62e537B7B24112cF934Ac457Ee',
+			pullAddress: '0xea4e04c65bC94efa31Df339e273a05911765B974',
 		}
 	}
 	// Mainnet

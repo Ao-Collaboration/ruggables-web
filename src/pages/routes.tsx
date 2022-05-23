@@ -13,3 +13,8 @@ export const MintRoute: Route = {
 	name: 'Mint',
 	path: '/mint',
 }
+
+export const ProfileRoute: Route = {
+	name: 'Profile',
+	path: '/profile',
+}

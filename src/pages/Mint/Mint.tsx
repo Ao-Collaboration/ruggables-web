@@ -1,11 +1,9 @@
 import { useContext, useState } from 'react'
-import { ethers } from 'ethers'
 import Button from '../../components/Button/Button'
 import { Web3Context } from '../../context/Web3/Web3Context'
 import useStyles from './Mint.styles'
-import { getChainConfig } from '../../config/chain'
-import RuggableABI from '../../abis/RuggableFreeMint.json'
 import PageWrapper from '../../components/PageWrapper/PageWrapper'
+import { getRuggableContract } from '../../utils/contractHelper'
 
 const Mint = () => {
 	const { web3Provider } = useContext(Web3Context)
@@ -18,7 +16,7 @@ const Mint = () => {
 			return
 		}
 		const signer = web3Provider.getSigner()
-		const contract = new ethers.Contract((await getChainConfig(web3Provider)).ruggableAddress, RuggableABI, signer)
+		const contract = await getRuggableContract(web3Provider)
 		const tx = await contract.mint(await signer.getAddress(), 1)
 		setTxPending(true)
 		await tx.wait()
