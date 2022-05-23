@@ -8,3 +8,8 @@ export const HomeRoute: Route = {
 	name: 'Home',
 	path: '/',
 }
+
+export const MintRoute: Route = {
+	name: 'Mint',
+	path: '/mint',
+}
