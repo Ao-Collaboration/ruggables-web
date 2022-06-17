@@ -3,16 +3,21 @@ import useStyles, { ClassNames } from './Button.styles'
 interface Props {
 	className?: ClassNames
 	children?: React.ReactNode
-  onClick: () => void
-  disabled?: boolean
+	onClick: () => void
+	disabled?: boolean
 }
 
-const Button: React.FC<Props> = ({children, onClick, className, disabled}) => {
+const Button: React.FC<Props> = ({
+	children,
+	onClick,
+	className,
+	disabled,
+}) => {
 	const classes = useStyles()
 
 	return (
 		<button
-			className={classes[className || 'button']}
+			className={classes[className || 'black']}
 			onClick={onClick}
 			disabled={disabled}
 		>

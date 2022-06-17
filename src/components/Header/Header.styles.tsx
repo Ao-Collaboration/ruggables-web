@@ -1,5 +1,5 @@
 import { createUseStyles } from 'react-jss'
-import { off_white } from '../../config/colors'
+import { black } from '../../config/colors'
 
 const styles = {
 	header: {
@@ -8,7 +8,7 @@ const styles = {
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		padding: '0.5em',
-		background: off_white,
+		background: black,
 	},
 }
 

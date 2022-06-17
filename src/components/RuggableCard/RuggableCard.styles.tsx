@@ -1,17 +1,17 @@
 import { createUseStyles } from 'react-jss'
-import { off_white, cyan } from '../../config/colors'
+import { blue, white } from '../../config/colors'
 
 const styles = {
 	card: {
 		padding: '1em',
 		margin: '1em',
-		backgroundColor: off_white,
+		backgroundColor: white,
 		borderRadius: '20px',
 		cursor: 'pointer',
 	},
 	selectedCard: {
 		composes: '$card',
-		backgroundColor: cyan,
+		backgroundColor: blue,
 	},
 	image: {
 		width: '320px',

@@ -61,7 +61,7 @@ function ConnectButton() {
 	}
 
 	return (
-		<Button onClick={connect} className="primary">
+		<Button onClick={connect} className="white">
 			{account || 'Connect Wallet'}
 		</Button>
 	)
