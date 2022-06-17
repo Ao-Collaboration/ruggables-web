@@ -6,6 +6,7 @@ import PageWrapper from '../../components/PageWrapper/PageWrapper'
 import { getRuggableContract } from '../../utils/contractHelper'
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
 import HowToWrapper from '../../components/HowToWrapper/HowToWrapper'
+import MintHelp from '../../help/MintHelp'
 
 const Mint = () => {
 	const { web3Provider } = useContext(Web3Context)
@@ -35,7 +36,7 @@ const Mint = () => {
 				</Button>
 				<p>{message}</p>
 			</ContentWrapper>
-			<HowToWrapper title='mint'></HowToWrapper>
+			<MintHelp />
 		</PageWrapper>
 	)
 }

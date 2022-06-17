@@ -5,7 +5,6 @@ const styles = {
 	default: {
 		position: 'relative',
 		display: 'flex',
-		minHeight: '100vh',
 		flexDirection: 'column',
 		alignItems: 'center',
 		backgroundColor: white,
@@ -26,6 +25,11 @@ const styles = {
 		zIndex: 1,
 		color: white,
 		marginTop: '1em',
+	},
+	container: {
+		maxWidth: '1080px',
+		margin: 'auto',
+		padding: '2em 0 5em',
 	},
 }
 

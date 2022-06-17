@@ -17,7 +17,9 @@ const HowToWrapper: React.FC<Props> = ({
 			<div className={classes.triangle}>
 			</div>
 			<Text variant='h2' className={classes.title}>How to ${title}</Text>
-			{children}
+			<div className={classes.container}>
+				{children}
+			</div>
 		</section>
 	)
 }
