@@ -1,18 +1,20 @@
 import { createUseStyles } from 'react-jss'
-import { black, yellow } from '../../config/colors'
+import { black, blue, white } from '../../config/colors'
 
 const styles = {
 	default: {
 		display: 'flex',
-		minHeight: '100vh',
 		flexDirection: 'column',
 		alignItems: 'center',
-		justifyContent: 'center',
-		backgroundColor: yellow,
+		backgroundColor: white,
+		padding: '2.5em 4em',
 	},
-	container: {
-		width: '1080px',
-		maxWidth: '100%',
+	title: {
+		color: blue,
+		margin: 0,
+	},
+	content: {
+		margin: '0.5em',
 	},
 }
 

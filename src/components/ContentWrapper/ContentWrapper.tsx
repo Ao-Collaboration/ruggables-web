@@ -10,9 +10,11 @@ const ContentWrapper: React.FC<Props> = ({
 	const classes = useStyles()
 
 	return (
-		<div className={classes.default}>
-			{children}
-		</div>
+		<main className={classes.default}>
+			<div className={classes.container}>
+				{children}
+			</div>
+		</main>
 	)
 }
 
