@@ -1,5 +1,5 @@
 import { createUseStyles } from 'react-jss'
-import { black } from '../../config/colors'
+import { black, white } from '../../config/colors'
 
 const styles = {
 	header: {
@@ -7,8 +7,22 @@ const styles = {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
 		alignItems: 'center',
-		padding: '0.5em',
+		padding: '0.5em 1em',
 		background: black,
+	},
+	right: {
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'flex-end',
+		alignItems: 'center',
+		gap: '3em',
+	},
+	title: {
+		color: white,
+	},
+	link: {
+		color: white,
+		textDecoration: 'none',
 	},
 }
 

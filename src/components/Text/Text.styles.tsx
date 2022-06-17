@@ -18,9 +18,16 @@ const styles = {
 		composes: '$base',
 		fontSize: '1.5em',
 	},
+	h4: {
+		composes: '$base',
+		fontSize: '1.25em',
+	},
 	bold: {
 		composes: '$base',
 		fontWeight: weightSemiBold,
+	},
+	large: {
+		composes: '$h4',
 	},
 	body: {
 		composes: '$base',
