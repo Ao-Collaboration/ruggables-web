@@ -4,6 +4,8 @@ import { Web3Context } from '../../context/Web3/Web3Context'
 import useStyles from './Mint.styles'
 import PageWrapper from '../../components/PageWrapper/PageWrapper'
 import { getRuggableContract } from '../../utils/contractHelper'
+import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
+import HowToWrapper from '../../components/HowToWrapper/HowToWrapper'
 
 const Mint = () => {
 	const { web3Provider } = useContext(Web3Context)
@@ -26,13 +28,14 @@ const Mint = () => {
 
 	return (
 		<PageWrapper>
-			<div className={classes.page}>
+			<ContentWrapper>
 				<h1>Mint your Ruggable!</h1>
 				<Button onClick={doMint} disabled={txPending}>
 					{txPending ? 'Tx Pending...' : 'Mint' }
 				</Button>
 				<p>{message}</p>
-			</div>
+			</ContentWrapper>
+			<HowToWrapper title='mint'></HowToWrapper>
 		</PageWrapper>
 	)
 }

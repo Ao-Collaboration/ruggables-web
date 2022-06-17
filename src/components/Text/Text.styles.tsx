@@ -8,19 +8,19 @@ const styles = {
 	},
 	h1: {
 		composes: '$base',
-		fontSize: '3em',
+		fontSize: '5em',
 	},
 	h2: {
 		composes: '$base',
-		fontSize: '2em',
+		fontSize: '3em',
 	},
 	h3: {
 		composes: '$base',
-		fontSize: '1.5em',
+		fontSize: '2em',
 	},
 	h4: {
 		composes: '$base',
-		fontSize: '1.25em',
+		fontSize: '1.5em',
 	},
 	bold: {
 		composes: '$base',

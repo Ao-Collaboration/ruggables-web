@@ -9,7 +9,7 @@ function Header() {
 
 	return (
 		<header className={classes.header}>
-			<Text variant='h2' className={classes.title}>Ruggables</Text>
+			<Text variant='h3' className={classes.title}>Ruggables</Text>
 			<nav className={classes.right}>
 				<Link to={`${MintRoute.path}`}><Text variant='large' className={classes.link}>Mint</Text></Link>
 				<ConnectButton />
